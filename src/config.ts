@@ -1,0 +1,32 @@
+import path from 'node:path';
+
+export const CONFIG = {
+  modelName: 'gemini-4-hydrogen',
+  thinkingLevel: 'LOW',
+  defaultDailyCalorieGoal: 2200,
+  minCalorieGoal: 500,
+  maxCalorieGoal: 10000,
+  defaultDailyProteinGoal: 150,
+  minProteinGoal: 20,
+  maxProteinGoal: 500,
+  maxBurnCalories: 10000,
+  dailyScanCap: 20,
+  maxRetries: 2,
+  maxImageBytes: 4 * 1024 * 1024,
+  maxImageDimension: 768,
+  imageQuality: 0.8,
+  allowedMimeTypes: ['image/jpeg', 'image/png', 'image/webp'] as readonly string[],
+  allowedExtensions: ['.jpg', '.jpeg', '.png', '.webp'] as readonly string[],
+  macroCalorieToleranceRatio: 0.15,
+  macroCalorieTolerancePadding: 20,
+  maxSingleMealCalories: 5000,
+  maxMacroGrams: 600,
+  retentionDays: 7,
+  dataDir: path.resolve(process.cwd(), 'output'),
+  logsFileName: 'logs.json',
+  recordsFileName: 'records.json',
+  port: 3000,
+  ownerName: 'Deveshan Govender',
+  freeTierWarning:
+    'Free-tier scans may be processed by Google under standard terms. Keep faces, documents, and personal details out of frame.',
+} as const;

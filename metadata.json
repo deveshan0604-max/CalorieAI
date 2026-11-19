@@ -1,0 +1,6 @@
+{
+  "name": "CalorieAI",
+  "description": "Single-task vision calorie and macro tracker with approval locks, deterministic checks, and local 7-day logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
